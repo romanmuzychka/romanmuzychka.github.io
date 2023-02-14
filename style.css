@@ -1,0 +1,12 @@
+body{
+	font-size: 40px;
+}
+
+button{
+	width: 50px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: rgb(128, 73, 73);
+	border: none;
+	box-shadow: 5px 5px 10px;
+}
