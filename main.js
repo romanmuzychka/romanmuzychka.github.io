@@ -1,4 +1,3 @@
-
 'use strict'
 
 let rt = document.getElementById('rt')
@@ -27,18 +26,10 @@ function createList() {
 	document.querySelectorAll('li').forEach(li => li.remove())
 	for (let aList of listUp) {
 		if (aList.boolean === true)
-				ul.insertAdjacentHTML("beforeend", ` <li class="li""><input  type="button"  class='but'>${aList.name}</li>`)
+				ul.insertAdjacentHTML("beforeend", ` <li class="li""><input  type="button"  class='but' value="OK">${aList.name}</li>`)
 		if (aList.boolean === false)
-				ulFalse.insertAdjacentHTML("beforeend", ` <li class="li" "><input  type="button" class='but'>${aList.name}</li>`)			
+				ulFalse.insertAdjacentHTML("beforeend", ` <li class="li" "><input  type="button" class='but but1' value="X">${aList.name}</li>`)			
 	}
 	let lii=document.querySelectorAll('.but');
 	lii.forEach(li=>{li.addEventListener('click',deleteLi)});
 }
-
-
-
-
-
-
-
-
