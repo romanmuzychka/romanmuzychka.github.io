@@ -12,22 +12,24 @@
 <body>
 	<div class="container">
 		<div id="f1">
-			<input type="text":focus { outline: none; }			id="rt">
+			<input type="text":focus { outline: none; }	id="rt">
 			<input type="button" id="button" value="Add">
 		</div>
 		<div id="f2">
-			<div>
+			<div class="lis" id="lis1">
 				<ol class="ulli">
 					<div id="check"> Список завдань:</div>
 				</ol>
 			</div>
-			<div>
+			<div class="lis" id="lis2">
 				<ol  id="falseCheck">
 					<div id="check"> Виконані завдань:</div>
 				</ol >
 			</div>
-			<ol  id="falseCheck">
-			</ol >
+		</div>
+		<div class="lib">
+			<input type="button" class="buttli" id="fals" value="Виконані">
+			<input type="button" class="buttli" id="true" value="Список">
 		</div>
 	</div>
 	<script src=" main.js">
