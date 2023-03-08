@@ -63,9 +63,6 @@ body{
 	border: none;
 	box-shadow: 5px 5px 10px;
  }
- #true{
-	display: none;
- }
- #lis2{
+ .fals1{
 	display: none;
  }
