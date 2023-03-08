@@ -6,8 +6,9 @@ let ulFalse = document.getElementById('falseCheck')
 let ulOll = document.getElementById('ollCheck')
 let listUp = [{ name: 'css', boolean: true }, { name: 'js', boolean: false }];
 
+
 document.getElementById('button').addEventListener('click', function () {
-	if (rt.value !== '') {
+	if (rt.value ) {
 		listUp.push({ name: `${rt.value}`, boolean: true })
 		createList()
 	}
@@ -33,3 +34,19 @@ function createList() {
 	let lii=document.querySelectorAll('.but');
 	lii.forEach(li=>{li.addEventListener('click',deleteLi)});
 }
+
+document.getElementById('fals').addEventListener('click', function () {
+	document.getElementById('fals').classList.add('fals1');
+	document.getElementById('lis1').classList.add('fals1');
+	document.getElementById('true').classList.remove('fals1');
+	document.getElementById('lis2').classList.remove('fals1');
+	
+});
+
+document.getElementById('true').addEventListener('click', function () {
+	document.getElementById('fals').classList.remove('fals1');
+	document.getElementById('lis1').classList.remove('fals1');
+	document.getElementById('true').classList.add('fals1');
+	document.getElementById('lis2').classList.add('fals1');
+	
+})
